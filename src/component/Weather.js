@@ -11,7 +11,6 @@ const Weather = ({name, weather: [{ main, description, icon }], wind: {speed, de
     <h1 style={{color: 'white'}}>Weather in {name}</h1>
     <TableContainer align="center">
     <TableBody>
-    <Table>
         <TableRow>
       <TableCell sx={{align: 'center'}}><p>{description}</p></TableCell>
       <TableCell><img
@@ -28,7 +27,6 @@ const Weather = ({name, weather: [{ main, description, icon }], wind: {speed, de
       <TableCell><p>Gust: <i style={{ color: "blue" }}>{gust}</i></p></TableCell>
       <TableCell>|</TableCell>
       </TableRow>
-      </Table>
       </TableBody>
       </TableContainer>
       </div>

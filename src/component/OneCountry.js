@@ -5,16 +5,15 @@ import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 
 const OneCountry = ({
-  name: { common, official },
-  nativeName,
-  /*nativeName: {official, common}*/ capital,
+  name: { common, official, nativeName },
+  capital,
   area,
   languages,
   flags,
   coatOfArms,
   maps,
 }) => {
-
+   const {official: officialName, common: commonName} = Object.values(nativeName)[0];
 
   return (
     <div>
@@ -27,6 +26,7 @@ const OneCountry = ({
       >
         <Card sx={{ width: 400, borderRadius: 10 }}>
           <CardContent>
+            <>
             <Typography
               sx={{ fontSize: 14 }}
               color='text.secondary'
@@ -66,12 +66,14 @@ const OneCountry = ({
                 <img src={coatOfArms?.png} alt='*Seems like no img' width={100} />
               </h1>
             </Typography>
+            </>
           </CardContent>
         </Card>
       </Grid>
 
-      {/* <h3>Official Name: <i>{nativeName.common}</i></h3> */}
-      {/* <h1><href src={maps?.googleMaps} alt="url"  /></h1> */}
+      <h3>Common Name: <i style={{ color: "blue" }}>{commonName}</i></h3>
+      <h3>Official Name: <i style={{ color: "blue" }}>{officialName}</i></h3>
+      <h1 style={{fontSize: 150, marginTop: -30, marginBottom: -20,}}><a href={maps?.openStreetMaps} alt="url" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>🗺️</a></h1>
     </div>
   );
 };
