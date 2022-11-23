@@ -1,6 +1,7 @@
 import { useState } from "react";
+import * as React from 'react';
 
-const FilterCountry = ({ onSearch, name }) => {
+const FilterCountry = ({ onSearch, countries }) => {
   const [show, setShow] = useState("");
   const handleListSearch = ({ target: { value } }) => {
     const upperValue = value.toUpperCase();
@@ -11,10 +12,16 @@ const FilterCountry = ({ onSearch, name }) => {
   return (
     <div>
       <div>
-        Find Countries <input value={show} onChange={handleListSearch} placeholder="Type Country Name" style={{}}/>
+        <input  value={show} onChange={handleListSearch} placeholder="Type Country Name 🔍" 
+        style={{borderRadius: 10, width: 300, height: 50, textAlign: "center", boxSizing: "border-box", outline:"none", fontSize: 20
+}}/> 
+
       </div>
     </div>
+    
   );
 };
+
+
 
 export default FilterCountry;

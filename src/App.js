@@ -57,6 +57,7 @@ const App = () => {
     <div style={{textAlign: "center", backgroundColor: "lightsteelblue"}}>
       <h1 style={{fontSize: 50}}>Country Filter 🌍</h1>
       <FilterCountry
+      countries={countries}
         onSearch={(key) => {
           setSearchKey(key);
           const filteredCountries = key
@@ -65,7 +66,10 @@ const App = () => {
               )
             : countries;
           if (filteredCountries.length === 1) {
-            setSelectedCountry(filteredCountries[0]);
+            setSelectedCountry(filteredCountries[0])
+          } else {
+            setSelectedCountry("")
+            setWeather("")
           }
         }}
       />
