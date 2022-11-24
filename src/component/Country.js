@@ -10,7 +10,7 @@ const Country = ({onShow, ...props}) => {
     <div>
       <p>
         {common}: {region}{" "}
-        <button style={{backgroundColor: 'lightblue', color: 'white', borderRadius: 5}} onClick={() => onShow(props)}>show</button>
+        <button style={{backgroundColor: '#FCF6F5FF', color: '#89ABE3FF', borderRadius: 5}} onClick={() => onShow(props)}>show</button>
       </p>
     </div>
   );

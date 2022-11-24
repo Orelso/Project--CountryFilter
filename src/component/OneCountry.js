@@ -58,7 +58,7 @@ const OneCountry = ({
             </Typography>
             <Typography variant='h5' component='div'>
               <h1>
-                <img src={flags?.png} alt='img' />
+                <img src={flags?.png} alt='img'  />
               </h1>
             </Typography>
             <Typography variant='h4' component='div'> 

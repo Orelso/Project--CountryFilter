@@ -12,7 +12,7 @@ const FilterCountry = ({ onSearch, countries }) => {
   return (
     <div>
       <div>
-        <input  value={show} onChange={handleListSearch} placeholder="Type Country Name 🔍" 
+        <input  value={show} onChange={handleListSearch} placeholder="Type Country Name ⌕" 
         style={{borderRadius: 10, width: 300, height: 50, textAlign: "center", boxSizing: "border-box", outline:"none", fontSize: 20
 }}/> 
 

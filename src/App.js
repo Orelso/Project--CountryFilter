@@ -54,7 +54,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={themeDark}>
-    <div style={{textAlign: "center", backgroundColor: "lightsteelblue"}}>
+    <div style={{textAlign: "center", backgroundColor: "#89ABE3FF"}}>
       <h1 style={{fontSize: 50}}>Country Filter 🌍</h1>
       <FilterCountry
       countries={countries}
