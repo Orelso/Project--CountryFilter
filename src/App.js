@@ -55,7 +55,7 @@ const App = () => {
   return (
     <ThemeProvider theme={themeDark}>
     <div style={{textAlign: "center", backgroundColor: "#89ABE3FF"}}>
-      <h1 style={{fontSize: 50}}>Country Filter 🌍</h1>
+      <h1 style={{fontSize: 50, fontFamily: "Bungee Spice"}}>Country Filter  🌍</h1>
       <FilterCountry
       countries={countries}
         onSearch={(key) => {
@@ -74,7 +74,7 @@ const App = () => {
         }}
       />
       {filteredCountries.length > 10 ? (
-        <h1 style={{ textTransform: 'uppercase', color: 'red' }}>Too many matches, specify another filter</h1>
+        <h1 style={{ textTransform: 'uppercase', color: 'white', fontFamily: 'Nabla', fontSize: 40 }}>Too many matches, specify another filter</h1>
       ) : (
         <>
           {filteredCountries.length !== 1 &&
