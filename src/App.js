@@ -97,4 +97,3 @@ const App = () => {
 export default App;
 
 
-// weather.weather[0].description && weather.wind.de
